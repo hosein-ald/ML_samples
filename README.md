@@ -1,44 +1,75 @@
-# Machine Learning Samples, My Personal Training 🚀
+[README.md](https://github.com/user-attachments/files/21926046/README.md)
+# 🧠 ML_sample
 
-This repository is a personal collection of machine learning practice projects. Each folder contains a simple implementation of a specific model, along with the dataset used. The goal is to learn, experiment, and build a reference for different ML algorithms using Python, scikit-learn, pandas, and numpy.
+This repository is a personal archive of simple machine learning projects, created as part of my training and ongoing practice. It includes implementations of various ML models, each organized in its own folder along with the dataset and code. My goal is to build and document all major types of models — from basic regressions to deep learning — using Python and common libraries.
 
-The repository is structured so that each model has its own folder with the script and dataset. For example:
-ML_sample/
-├── NaiveBayes/
-│ ├── naive_bayes.py
-│ └── dataset.csv
-├── DecisionTree/
-│ ├── decision_tree.py
-│ └── dataset.csv
-├── RandomForest/
-│ ├── random_forest.py
-│ └── dataset.csv
-├── KNN/
-│ ├── knn.py
-│ └── dataset.csv
-├── LogisticRegression/
-│ ├── logistic_regression.py
-│ └── dataset.csv
-├── NeuralNetwork/
-│ ├── neural_network.py
-│ └── dataset.csv
-└── README.md
+Each subfolder in this repo represents a specific model or technique (e.g., linear regression, decision trees, SVM, neural networks), and typically contains:
 
+- 📊 A sample dataset (e.g., CSV file)
+- 🧮 The implementation in Jupyter Notebook and/or Python script
+- 📝 Optional notes or experiment logs
 
-Models currently included are Naive Bayes, Decision Tree, Random Forest, K-Nearest Neighbors, Logistic Regression, and a basic Neural Network. The idea is to gradually extend this with more models like SVM, Gradient Boosting, and XGBoost, and to also compare models on the same dataset with added visualizations and notebooks.
+The code is developed using Python (mainly with Anaconda and `uv` environments), and uses tools like Jupyter Notebook or VSCode, depending on the project.
 
-To run any model, install the requirements first:
+### ✅ What’s Included
+
+This archive will include examples of:
+
+- Linear Regression, Logistic Regression  
+- Decision Trees, Random Forests  
+- K-Nearest Neighbors (KNN)  
+- Naive Bayes  
+- Support Vector Machines (SVM)  
+- XGBoost  
+- Clustering (e.g., KMeans, DBSCAN)  
+- Dimensionality Reduction (PCA, t-SNE)  
+- Neural Networks (e.g., MLPClassifier)
+
+### 🛠 Dependencies
+
+All projects use a common stack of Python libraries:
+
+- `numpy`  
+- `pandas`  
+- `matplotlib`  
+- `scikit-learn`  
+
+You can install dependencies via `uv`:
 
 ```bash
-pip install -r requirements.txt
+uv venv
+uv pip install -r requirements.txt
+```
 
-where requirements.txt contains:
-numpy
-pandas
-scikit-learn
+Or via Conda:
 
-Then navigate into the folder of the model you want to run and execute the script, for example:
-cd NaiveBayes
-python naive_bayes.py
+```bash
+conda create -n ml_sample python=3.11
+conda activate ml_sample
+conda install numpy pandas matplotlib scikit-learn
+```
 
-This repository is mainly for personal learning and tutorials, a way to keep track of experiments and serve as a reference.
+### 📦 Repository Example Structure
+
+```
+ML_sample/
+├── linear_regression/
+│   ├── data.csv
+│   ├── notebook.ipynb
+│   └── model.py
+├── decision_tree/
+├── knn/
+└── ...
+```
+
+### 📚 Purpose
+
+This is a personal learning repo for exploring machine learning models hands-on. It’s not meant to be production-ready or exhaustive, but rather a curated collection of practice projects for future reference and experimentation.
+
+### 🪪 License
+
+This project is released under the [MIT License](LICENSE). Feel free to use or build upon it.
+
+### 🤝 Contributions
+
+While this is primarily a personal project, I’m open to suggestions or pull requests that help improve code readability or correctness.
