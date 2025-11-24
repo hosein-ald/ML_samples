@@ -57,8 +57,10 @@ ML_sample/
 │   ├── data.csv
 │   ├── notebook.ipynb
 │   └── model.py
-├── decision_tree/
-├── knn/
+├── Malaria Prediction/
+├── Cancer Prediction/
+├── /
+├── /
 └── ...
 ```
 
